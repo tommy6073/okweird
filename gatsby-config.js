@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `It's okay to be weird - Takayuki NAGATOMI`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Takayuki NAGATOMI`,
+      summary: `レールの無い道を行くプログラマー`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `レールの無い道を行くプログラマーのWebサイト`,
+    siteUrl: `https://www.okweird.net/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `tommy6073`,
     },
   },
   plugins: [
