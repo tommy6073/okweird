@@ -49,6 +49,7 @@ const Bio = () => {
       )}
       {author?.name && (
         <div>
+          <strong>{author.name}</strong>
           <p>
             1985年に生まれて以来ずっと福岡在住。高校を1年で中退後、引きこもって海外ゲームばかり遊んでいたら英語が得意になり、TOEICスコア960を獲得。
           </p>
