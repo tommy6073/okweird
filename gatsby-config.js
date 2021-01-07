@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `It's okay to be weird`,
     author: {
-      name: `Takayuki NAGATOMI`,
+      name: `Takayuki NAGATOMI 永冨隆之`,
       summary: `レールの無い道を行くプログラマー`,
     },
     description: `レールの無い道を行くプログラマーのWebサイト`,
