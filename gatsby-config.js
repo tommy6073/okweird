@@ -6,7 +6,7 @@ module.exports = {
       summary: `レールの無い道を行くプログラマー`,
     },
     description: `レールの無い道を行くプログラマーのWebサイト`,
-    siteUrl: `https://www.okweird.net/`,
+    siteUrl: `https://okweird.net/`,
     social: {
       twitter: `tommy6073`,
     },
