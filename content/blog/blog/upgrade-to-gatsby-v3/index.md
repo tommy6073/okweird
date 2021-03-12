@@ -15,6 +15,7 @@ npm install gatsby@latest
 ```
 
 まずはメインであるGatsbyのアップグレードを行います。
+僕の場合、`2.31.1` から `3.0.4` まで上がりました。
 
 ```shell
 npm outdated
