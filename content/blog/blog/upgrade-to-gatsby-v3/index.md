@@ -10,21 +10,21 @@ https://okweird.net は[Gatsby](https://www.gatsbyjs.com/)と[gatsby-blog-starte
 
 ## 作業ログ
 
-```shell
-npm install gatsby@latest
+```shell-session
+$ npm install gatsby@latest
 ```
 
 まずはメインであるGatsbyのアップグレードを行います。
 僕の場合、`2.31.1` から `3.0.4` まで上がりました。
 
-```shell
-npm outdated
+```shell-session
+$ npm outdated
 ```
 
 古い依存をリストします。
 僕の場合、結果はこのような感じでした。
 
-```shell
+```text
 Package                          Current   Wanted  Latest  Location
 gatsby-image                       2.5.0   2.11.0   3.0.0  gatsby-starter-blog
 gatsby-plugin-feed                 2.7.0   2.13.1   3.0.0  gatsby-starter-blog
@@ -51,44 +51,44 @@ typeface-montserrat               0.0.75   0.0.75  1.1.13  gatsby-starter-blog
 
 公式ガイドでは1つ1つ `npm install {package}@latest` するように書かれていますが、大変なので依存を最新にしてくれる `npm-check-updates` を使います。
 
-```shell
-npm install -g npm-check-updates
+```shell-session
+$ npm install -g npm-check-updates
 ```
 
 `npm-check-updates` のインストール。
 
-```shell
-ncu -u
+```shell-session
+$ ncu -u
 ```
 
 `package.json` を最新のパッケージにアップグレード。
 
-```shell
-npm install
+```shell-session
+$ npm install
 ```
 
 実際にパッケージをインストール。
 
-```shell
-npm outdated
+```shell-session
+$ npm outdated
 ```
 
 ここで再度チェックしてみたところ、僕の場合は `gatsby-image` が残っていました。
 
-```shell
+```text
 Package       Current  Wanted  Latest  Location
 gatsby-image    2.5.0  2.11.0   3.0.0  gatsby-starter-blog
 ```
 
-```shell
-npm install gatsby-image@latest
+```shell-session
+$ npm install gatsby-image@latest
 ```
 
 `gatsby-image` をアップグレードします。
 
 ここで `gatsby develop` をすると以下のようなPostCSS関連のエラーが出ました。
 
-```shell
+```text
 Error: PostCSS plugin postcss-flexbugs-fixes requires PostCSS 8.
 Migration guide for end-users:
 https://github.com/postcss/postcss/wiki/PostCSS-8-for-end-users
@@ -96,8 +96,8 @@ https://github.com/postcss/postcss/wiki/PostCSS-8-for-end-users
 
 そのため、PostCSS関連も[PostCSS公式の移行ガイド](https://github.com/postcss/postcss/wiki/PostCSS-8-for-end-users#gatsby)にしたがってアップグレードします。
 
-```shell
-npm install gatsby-plugin-postcss
+```shell-session
+$ npm install gatsby-plugin-postcss
 npm install postcss
 ```
 
@@ -107,14 +107,14 @@ npm install postcss
 
 というメッセージが出ていたため `gatsby-plugin-image` を使うようこちらも[公式移行ガイド](https://www.gatsbyjs.com/docs/reference/release-notes/image-migration-guide/)に従いアップグレードします。
 
-```shell
-npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-transformer-sharp
+```shell-session
+$ npm install gatsby-plugin-image gatsby-plugin-sharp gatsby-transformer-sharp
 ```
 
 関連するプラグインをインストールします。
 
-```shell
-npx gatsby-codemods gatsby-plugin-image
+```shell-session
+$ npx gatsby-codemods gatsby-plugin-image
 ```
 
 `gatsby-plugin-image` 用にコードを自動的に修正してくれます。
