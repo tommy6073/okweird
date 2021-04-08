@@ -1,7 +1,6 @@
 ---
 title: const writeWebAppWithStrongWill = true;
 date: "2021-04-06 21:55"
-description: "強い意志を持って私はこのWebアプリを作り遂げる"
 ---
 
 同僚たちと毎週夜にCode Completeの読書会をやっているのだけど、本編自体は早めに終わったあと、僕の「雑談いいですか？」という一言から、仕事とプライベートでやっていることについて色んな話をした。

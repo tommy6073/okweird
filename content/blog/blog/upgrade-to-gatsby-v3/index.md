@@ -1,7 +1,6 @@
 ---
 title: Gatsbyをv3にアップグレードしてgatsby-blog-starterもアップグレードした
 date: "2021-03-11 17:30"
-description: "アップグレードのログを残しておきます"
 ---
 
 表題のとおりです。

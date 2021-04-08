@@ -1,7 +1,6 @@
 ---
 title: My New Blog...
 date: "2021-01-06 01:34"
-description: "ブログを移行しました"
 ---
 
 ブログをはてなブログからGatsbyに移行しました。
